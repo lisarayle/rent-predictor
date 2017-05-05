@@ -26,9 +26,9 @@
       <div class="row">
         <div class="col-md-6">
           <div class="col-md-12">
-            <h3 class="text-muted">What kind of unit are you looking for?</h3>
+            <h3 class="text-muted py-5">What kind of unit are you looking for?</h3>
           </div>
-          <form action="{{ url_for('index') }}" method="post">
+          <form action="{{ url_for('index') }}" method="post" class="py-3">
             <dl class="px-2"> <dt>Floor area in square feet
         </dt>
               <dd><input type="text" name="sqft" min="10" max="100000" value="750" size="6" required=""> </dd><dt># Bedrooms
@@ -44,11 +44,12 @@
                 </div>
               </div>
             </div>
-            <div id="submit" class="text-left p-2"> <input type="submit" value="Submit"> </div>
+            <div id="submit" class="text-left p-3"> <input type="submit" value="Submit"> </div>
           </form>
         </div>
         <div class="col-md-6">
-          <p class=""><b>Pick a location on the map</b></p><img class="center-block rounded bg-warning m-0 mx-auto" src="https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyDW8nO9JhT_pEjebobq9pgUF2cEp0EUb1I&amp;center=New+York+City&amp;zoom=12&amp;size=550x500&amp;sensor=false">          </div>
+          <p class="">Paragraph</p>
+          <p class="text-muted"><b>Pick a location on the map</b></p><img class="center-block rounded m-0 mx-auto" src="https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyDW8nO9JhT_pEjebobq9pgUF2cEp0EUb1I&amp;center=New+York+City&amp;zoom=12&amp;size=550x480&amp;sensor=false">          </div>
       </div>
     </div>
   </div>
@@ -59,7 +60,7 @@
       </div>
       <div class="row">
         <div class="col-md-12">
-          <div class="row p-2">
+          <div class="row p-2 bg-faded">
             <div class="col-md-4">
               <h2 class="text-muted text-center my-1">Estimated price:</h2>
             </div>
