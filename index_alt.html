@@ -21,19 +21,13 @@
       </div>
     </div>
   </div>
-  <div class="">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h4 class="text-muted">What kind of unit are you looking for?</h4>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="py-2 text-info">
+  <div class="py-5  section">
     <div class="container">
       <div class="row">
         <div class="col-md-6">
+          <div class="col-md-12">
+            <h3 class="text-muted">What kind of unit are you looking for?</h3>
+          </div>
           <form action="{{ url_for('index') }}" method="post">
             <dl class="px-2"> <dt>Floor area in square feet
         </dt>
@@ -46,18 +40,22 @@
             <div class="">
               <div class="container">
                 <div class="row">
-                  <div class="col-md-12">
-                    <p class=""><b>Pick a location on the map</b></p>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-md-12 col-sm-6 py-1"><img class="center-block rounded bg-warning m-0 mx-auto" src="https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyDW8nO9JhT_pEjebobq9pgUF2cEp0EUb1I&amp;center=New+York+City&amp;zoom=12&amp;size=640x400&amp;sensor=false"></div>
+                  <div class="col-md-12"> </div>
                 </div>
               </div>
             </div>
             <div id="submit" class="text-left p-2"> <input type="submit" value="Submit"> </div>
           </form>
         </div>
+        <div class="col-md-6">
+          <p class=""><b>Pick a location on the map</b></p><img class="center-block rounded bg-warning m-0 mx-auto" src="https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyDW8nO9JhT_pEjebobq9pgUF2cEp0EUb1I&amp;center=New+York+City&amp;zoom=12&amp;size=550x500&amp;sensor=false">          </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-2 text-info">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6"> </div>
       </div>
       <div class="row">
         <div class="col-md-12">
