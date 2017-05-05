@@ -7,17 +7,26 @@
   <link rel="stylesheet" href="https://pingendo.com/assets/bootstrap/bootstrap-4.0.0-alpha.6.css" type="text/css"> </head>
 
 <body>
-  <div class="py-5 section text-center">
+  <div class="section text-center py-5">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h1 class="text-primary">Rent Predictor</h1>
-          <p class="lead text-success text-center">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu.</p>
+          <h1 class="text-primary">Rent predictor</h1>
+          <p class="lead text-success text-center">Estimate rent prices based on Craigslist data</p>
         </div>
       </div>
     </div>
   </div>
-  <div class="py-5 text-muted">
+  <div class="py-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="">What kind of unit are you looking for?</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="text-muted py-2">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -26,24 +35,20 @@
         </dt>
               <dd><input type="text" name="sqft" min="10" max="100000" value="750" size="6" required=""> </dd><dt># Bedrooms
         </dt>
-              <dd class="w-25 my-3 px-0 bg-info"><input type="number" name="beds" min="0" max="20" value="3" size="3" required=""> </dd><dt># Bathrooms
+              <dd class="w-25 px-0"><input type="number" name="beds" min="0" max="20" value="3" size="3" required=""> </dd><dt># Bathrooms
         </dt>
               <dd><input type="text" name="baths" min="0" max="10" value="1.5" size="4" required=""> </dd>
             </dl> <input type="hidden" id="lat" name="lat" value="37.815314"> <input type="hidden" id="lng" name="lng" value="-122.294898">
-            <div id="mapContainer">
-              <h3>Click on map to specify location</h3>
-              <div id="map"></div>
+            <div class="">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12 align-self-center py-3 col-sm-6"><img class="center-block rounded bg-warning m-0 mx-auto" src="https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyDW8nO9JhT_pEjebobq9pgUF2cEp0EUb1I&amp;center=New+York+City&amp;zoom=12&amp;size=640x480&amp;sensor=false"></div>
+                </div>
+              </div>
             </div>
             <div id="submit"> <input type="submit" value="Submit"> </div>
           </form>
         </div>
-      </div>
-    </div>
-  </div>
-  <div class="py-5">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12 align-self-center py-3 col-sm-6"><img class="center-block rounded bg-warning m-0 mx-auto" src="https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyDW8nO9JhT_pEjebobq9pgUF2cEp0EUb1I&amp;center=New+York+City&amp;zoom=12&amp;size=640x480&amp;sensor=false"></div>
       </div>
     </div>
   </div>
