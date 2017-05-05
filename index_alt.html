@@ -29,11 +29,11 @@
             <h3 class="text-muted py-5">What kind of unit are you looking for?</h3>
           </div>
           <form action="{{ url_for('index') }}" method="post" class="py-3">
-            <dl class="px-2"> <dt>Floor area in square feet
+            <dl class="px-2"> <dt class="text-info">Floor area in square feet
         </dt>
-              <dd><input type="text" name="sqft" min="10" max="100000" value="750" size="6" required=""> </dd><dt># Bedrooms
+              <dd><input type="text" name="sqft" min="10" max="100000" value="750" size="6" required=""> </dd><dt class="text-info"># Bedrooms
         </dt>
-              <dd class=""><input type="number" name="beds" min="0" max="20" value="3" size="3" required=""> </dd><dt># Bathrooms
+              <dd class=""><input type="number" name="beds" min="0" max="20" value="3" size="3" required=""> </dd><dt class="text-info"># Bathrooms
         </dt>
               <dd><input type="text" name="baths" min="0" max="10" value="1.5" size="4" required=""> </dd>
             </dl> <input type="hidden" id="lat" name="lat" value="37.815314"> <input type="hidden" id="lng" name="lng" value="-122.294898">
@@ -48,12 +48,11 @@
           </form>
         </div>
         <div class="col-md-6">
-          <p class=""></p>
-          <p class="text-muted"><b>Pick a location on the map</b></p><img class="center-block rounded m-0 mx-auto" src="https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyDW8nO9JhT_pEjebobq9pgUF2cEp0EUb1I&amp;center=New+York+City&amp;zoom=12&amp;size=550x480&amp;sensor=false">          </div>
+          <p class="text-info"><b>Pick a location on the map</b></p><img class="center-block rounded m-0 mx-auto" src="https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyDW8nO9JhT_pEjebobq9pgUF2cEp0EUb1I&amp;center=New+York+City&amp;zoom=12&amp;size=550x480&amp;sensor=false">          </div>
       </div>
     </div>
   </div>
-  <div class="py-2 text-info">
+  <div class="text-info py-4">
     <div class="container">
       <div class="row">
         <div class="col-md-6"> </div>
@@ -62,7 +61,7 @@
         <div class="col-md-12">
           <div class="row p-2 bg-faded">
             <div class="col-md-4">
-              <h2 class="text-muted text-center my-1">Estimated price:</h2>
+              <h1 class="text-muted text-center">Estimated price:</h1>
             </div>
             <div class="col-md-6">
               <h1 class="text-success w-100">$3,176 - $3,780</h1>
