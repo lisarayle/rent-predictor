@@ -30,13 +30,13 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12">
-          <h4 class="text-muted p-3">What kind of unit are you looking for?</h4>
+          <h4 class="text-muted px-4">What kind of unit are you looking for?</h4>
         </div>
       </div>
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 py-4">
           <div class="col-md-12"> </div>
-          <form action="{{ url_for('index') }}" method="post" class="p-3">
+          <form action="{{ url_for('index') }}" method="post" class="px-3">
             <dl class="px-2"> <dt class="text-info">Floor area in square feet
         </dt>
               <dd><input type="text" name="sqft" min="10" max="100000" value="750" size="6" required=""> </dd><dt class="text-info"># Bedrooms
@@ -55,7 +55,7 @@
             <div id="submit" class="p-3 my-5"> <input type="submit" value="Submit"> </div>
           </form>
         </div>
-        <div class="py-3 col-md-8">
+        <div class="col-md-8 py-4">
           <p class="text-info"><b>Pick a location on the map</b></p><img class="center-block rounded m-0 mx-auto" src="https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyDW8nO9JhT_pEjebobq9pgUF2cEp0EUb1I&amp;center=San+Francisco+Bay+Area&amp;zoom=10&amp;size=600x480&amp;sensor=false">          </div>
       </div>
     </div>
