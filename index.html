@@ -28,11 +28,11 @@
   <div class="col-md-12 py-4">
     <div class="col-md-12"> </div>
     <form action="{{ url_for('index') }}" method="post" class="px-3">
-      <dl class="px-2"> <dt class="text-info">Floor area in square feet
+      <dl class="px-2"> <dt class="">Floor area in square feet
         </dt>
-        <dd><input type="text" name="sqft" min="10" max="100000" value="750" size="6" required=""> </dd><dt class="text-info"># Bedrooms
+        <dd><input type="text" name="sqft" min="10" max="100000" value="750" size="6" required=""> </dd><dt class=""># Bedrooms
         </dt>
-        <dd class=""><input type="number" name="beds" min="0" max="20" value="3" size="3" required=""> </dd><dt class="text-info"># Bathrooms
+        <dd class=""><input type="number" name="beds" min="0" max="20" value="3" size="3" required=""> </dd><dt class=""># Bathrooms
         </dt>
         <dd class=""><input type="text" name="baths" min="0" max="10" value="1.5" size="4" required=""> </dd>
       </dl> <input type="hidden" id="lat" name="lat" value="37.815314"> <input type="hidden" id="lng" name="lng" value="-122.294898">
@@ -55,7 +55,7 @@
       </div>
       <div class="row">
         <div class="col-md-12 py-4">
-          <p class="text-info"><b>Pick a location on the map</b></p><img class="center-block rounded m-0 mx-auto" src="https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyDW8nO9JhT_pEjebobq9pgUF2cEp0EUb1I&amp;center=San+Francisco+Bay+Area&amp;zoom=10&amp;size=600x480&amp;sensor=false">          </div>
+          <p class=""><b>Pick a location on the map</b></p><img class="center-block rounded m-0 mx-auto" src="https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyDW8nO9JhT_pEjebobq9pgUF2cEp0EUb1I&amp;center=San+Francisco+Bay+Area&amp;zoom=10&amp;size=600x480&amp;sensor=false">          </div>
       </div>
     </div>
   </div>
@@ -83,11 +83,11 @@
     <div class="container">
       <div class="row">
         <div class="col-md-12 bg-faded">
-          <p class="">[TO MAYBE GO HERE: histogram of prices in entire Bay Area, with the predicted range highlighted.]</p>
+          <p class="">90% confidence interval for your estimate, compared to all listings in the Bay Area</p>
         </div>
       </div>
       <div class="row bg-faded">
-        <div class="col-sm-6"><img class="center-block img-fluid d-block" src="https://pingendo.com/assets/photos/wireframe/photo-1.jpg"></div>
+        <div class="col-sm-6"><img class="center-block img-fluid d-block" src="plot.png"></div>
       </div>
     </div>
   </div>
